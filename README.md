@@ -2,7 +2,7 @@
 
 This is a furniture shopping app interface with live filtering and sorting functionality, and a shopping cart for adding/removing items and displaying the total price. It is created using React.js and React Bootstrap framework.
 
-## Organization of Components
+### Organization of Components
 
 The general architecture of the app consists of three js files:
 
@@ -13,7 +13,7 @@ FilteredList.js contains filtering and sorting methods and the Navbar component 
 DisplayList.js contains HTML elements of the App layout and maps each product from App.js to an HTML element or component for rendering. It also contains aggregator methods which are used to generate the live shopping cart session.
 
 
-## Data Passing Flow
+### Data Passing Flow
 
 The productList in App.js is passed to the FilteredList and DisplayList components as a prop.
 
@@ -23,7 +23,7 @@ MatchesFilter/Sort functions are called inside the built-in filter() and sort() 
 
 The functions of adding/removing items and handling quantities are called once there is a click on the button. The quantity of the items which needs to be updated are passed into the handleIncrement/Decrement function by assigning a new variable inheriting the cart state.
 
-## State Changes Trigger
+### State Changes Trigger
 
 We track the state of the selected filtering/sorting category in FilteredList.js. Inside the constructor, three states are created and will change dynamically depending on the filter or the sorting method selected. 
 
